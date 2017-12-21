@@ -2,93 +2,435 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!--External Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- Internal Styles -->
-	<style>
-        @media (max-width: 62em) {
-            .navbar-nav {
-                padding-top: .425rem;
-                padding-left: 0.75rem;
-            }
-            .navbar-nav .nav-item {
-                float: none;
-            }
-            .navbar-brand {
-                float: right;
-            }
-            .navbar-brand,
-            .navbar-nav .nav-item {
-                display: block;
-            }
-            .navbar-nav .nav-item + .nav-item {
-                margin-left: 0;
-            }
-            .dropdown-menu {
-                position: relative;
-                float: none;
-            }
-        }
-    </style>
-    <!-- External Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    
-    <!-- Internal Scripts -->
-	<script type="text/javascript" src="">
-	</script>
-
-    <title>Bootsrap Shell With Navabar</title>
-
-	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Silver Turku</title>
 </head>
 
 <body>
-   
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-       
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Navbar</a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <!-- Dropdown - Delete from this comment to the next if you don't want it -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separted</a>
-                    </div>
-                </li>
-            </ul>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="img/logos.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> </a>
+      <div class="navbar-end is-hidden-desktop">
+        <a class="navbar-item" href="https://www.facebook.com/silviturku" target="_blank">
+          <span class="icon" style="color: #3b5998;">
+            <i class="fa fa-lg fa-facebook-square"></i>
+          </span>
+        </a>
+        <a class="navbar-item" href="https://www.instagram.com/itssilverbaby/" target="_blank">
+          <span class="icon" style="color: #bc2a8d;">
+            <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
+          </span>
+        </a>
+        <a class="navbar-item" href="https://github.com/itsSilver" target="_blank">
+          <span class="icon" style="color: #333;">
+            <i class="fa fa-lg fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="navbar-end is-hidden-touch">
+      <a class="navbar-item" href="https://www.facebook.com/silviturku" target="_blank">
+        <span class="icon" style="color: #3b5998;">
+          <i class="fa fa-lg fa-facebook-square"></i>
+        </span>
+      </a>
+      <a class="navbar-item" href="https://www.instagram.com/itssilverbaby/" target="_blank">
+        <span class="icon" style="color: #bc2a8d;">
+          <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
+        </span>
+      </a>
+      <a class="navbar-item" href="https://github.com/itsSilver" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-lg fa-github"></i>
+        </span>
+      </a>
+    </div>
+  </nav>
+  <div class="header">
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+      preserveAspectRatio="none">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 
+   58-18 88-18s
+   58 18 88 18 
+   58-18 88-18 
+   58 18 88 18
+   v44h-352z" /> </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="50" y="6" fill="#B47D32" /> </g>
+    </svg>
+    <div class="content">
+      <h1>Silver Turku</h1>
+      <a href="https://instagram.com/itssilverbaby" target="_blank">@itsSilverbaby</a>
+    </div>
+  </div>
+  <section class="hero is-medium" id="about">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <div id="aboutme" data-aos="fade-up-right" class="aos-init aos-animate">
+              <h1 class="title is-size-2-mobile" style="color: #220e19;">about.</h1>
+              <p> Hi, my name is Silver Turku. I'm 22 years old from Albania.
+                <br> My passions are Web development &amp; Web design. Also Hybrid mobile development using
+                <br>javascript Frameworks. When it comes down to it, I just want to build cool things.
+                <br> Check out my resume to learn more about me! </p>
+              <div class="buttons">
+                <a href="Silver.pdf" class="button is-black is-outlined" style="margin-top: 20px; width: 150px;">
+                  <span class="icon">
+                    <i class="fa fa-file-text-o" style="margin-right: 2px;"></i>
+                  </span>
+                  <span> Resume </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="anm"> </div>
+          </div>
         </div>
-    
-    </nav>
-
-	<div class="container-fluid">
-        
-	</div>
-
-
+      </div>
+    </div>
+  </section>
+  <section class="hero is-fullheight" id="work">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-size-2-mobile aos-init aos-animate" data-aos="fade-up" style="color: #220e19;">work.</h1>
+        <p class="subtitle is-size-5 aos-init aos-animate" data-aos="fade-up">some of my projects.</p>
+        <div class="projects" style="margin-top: 30px;">
+          <div class="columns is-multiline">
+            <div class="column is-one-third aos-init aos-animate" data-aos="fade-down-left">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4685/39187620451_8ca8173e1e_b.jpg"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> Charity Template is a Wordpress Theme that I've created from scratch. The theme is writen with the latest
+                    Technology and is fully responsive.
+                    <strong>Backend PhP</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="http://charity.shehup.al/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init aos-animate" data-aos="fade-down-right">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4637/39160508422_fde917ab05_b.jpg"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> Evobuild Template is another Wordpress Theme that I've created from scratch. This theme has custom plugins
+                    developed and also is fully responsove.
+                    <strong>Backend PhP</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="http://total.evolve.al/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init aos-animate" data-aos="fade-down-right">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4639/39160631962_5e3bb62c7b_b.jpg"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> Palace Hotel Website. This website was created & designed with Wordpress customizing a prebuild Theme.
+                    Also i created a custom payment gateway plugin for payments with BKT.
+                    <strong> Frontend & Backend</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="http://palacehotel.al/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init" data-aos="fade-down-left">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4685/25322757278_ecdecae69f_b.jpg" alt="blog"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> ShopZone Ecommerce Website. Shopzone is created with Prestashop Framework and is a multi-commerce website.
+                    <strong> Frontend & Backend</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="http://shopzone.al/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init" data-aos="fade-down">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4684/25322805408_0c679df5a0_b.jpg" alt="work"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> Finrent Car Loan Website. Finrent is created with Opencart 3.0.0 Framework and is a ecommerce Loan Car
+                    Website.
+                    <strong> Frontend & Backend</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="http://www.finrent.it/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init" data-aos="fade-down">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4739/39160949652_4b5392976d_b.jpg" alt="seirotechrepair"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> Medfau Medical. Medfau is created with Wordpress. It's fully responsive and is created with custom HTML5
+                    & Visual Composer Plugin.
+                    <strong> Frontend & Backend</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="http://medfau.com/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init" data-aos="fade-down">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4590/27411052879_15577f8fdc_b.jpg" alt="seirotechrepair"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> Todo App. Todo App is created with AngularJS 4 Framework and Firebase. It's a personal Todo Project to
+                    maintain tasks for my projects.
+                    <strong> Frontend & Backend Latest Tech</strong>
+                  </p>
+                  <div class="buttons">
+                    <a href="https://ng2-todo-app.firebaseapp.com/" class="button is-black is-inverted is-small">
+                      <span class="icon is-small">
+                        <i class="fa fa-globe"></i>
+                      </span>
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third aos-init" data-aos="fade-down">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://farm5.staticflickr.com/4689/38481064234_c5d843abfd_b.jpg" alt="seirotechrepair"> </figure>
+                </div>
+                <div class="card-content">
+                  <p style="font-size: 0.80rem;"> More than 6 Hybrid Mobile applications created with Angular as Frontend and Wordpress or Firebase as backend.
+                    Applications like personal blogs or eccomerce apps.
+                    <strong> AngularJS & Ionic</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="st">
+          <p class="subtitle is-size-5 aos-init aos-animate" data-aos="fade-up">... and more than 40+ Wordpress websites using Visual Composer Plugin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-fullheight" id="skills">
+    <div class="container">
+      <h1 class="title is-size-2-mobile aos-init aos-animate" data-aos="fade-up" style="color: #220e19;">skills.</h1>
+      <p class="subtitle is-size-5 aos-init aos-animate" data-aos="fade-up">languages & frameworks that I use.</p>
+      <div class="projects" style="margin-top: 30px;">
+        <div class="columns is-multiline">
+          <div class="column is-half aos-init" data-aos="fade-down">
+            <div class="sk">
+              <div class="centered">
+                <h2 class="size-2" style="color: #220e19;">Web Development</h2>
+              </div>
+              <div class="centered">
+                <svg data-name="terminal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" class="svgicon">
+                  <title>portfolio-logo-set</title>
+                  <path d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z" style="fill:#231f20"></path>
+                  <path d="M30.92,52h16v2.37h-16Z" style="fill:#231f20"></path>
+                  <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" class="icon__stroke"></rect>
+                  <line x1="1.79" y1="25.17" x2="136.21" y2="25.17" class="icon__stroke icon__stroke--inner"></line>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half aos-init" data-aos="fade-down">
+            <div class="centered">
+              <h2 class="size-2" style="color: #220e19;">Languages</h2>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <img class="skills-item" src="img/html5.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/css3.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/sass.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/javascript.png"> </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <img class="skills-item" src="img/nodejs.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/php.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/laravel.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/mysql.png"> </div>
+            </div>
+            <div class="centered">
+              <h2 class="size-2" style="color: #220e19;">Frameworks/Tools</h2>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <img class="skills-item" src="img/wordpress.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/presta.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/angular.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/ionic.png"> </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <img class="skills-item" src="img/npm.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/github.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/gulp.png"> </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-multiline">
+          <div class="column is-half aos-init" data-aos="fade-down">
+            <div class="sk1">
+              <div class="centered">
+                <h2 class="size-2" style="color: #220e19;">UI/UX Development</h2>
+              </div>
+              <div class="centered">
+                <svg data-name="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" class="svgicon">
+                  <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" class="icon__stroke"></rect>
+                  <line x1="2" y1="25.17" x2="136.42" y2="25.17" class="icon__stroke icon__stroke--inner"></line>
+                  <rect x="8" y="51.46" width="72.25" height="35.63" style="fill:#c2c2c1"></rect>
+                  <rect x="85.25" y="51.46" width="44.75" height="15.33" style="fill:#c2c2c1"></rect>
+                  <rect x="8" y="31.13" width="22.38" height="15.33" style="fill:#c2c2c1"></rect>
+                  <rect x="35.38" y="31.13" width="94.63" height="15.33" style="fill:#c2c2c1"></rect>
+                  <rect x="85.25" y="71.73" width="44.75" height="15.33" style="fill:#c2c2c1"></rect>
+                  <rect x="8" y="92" width="122" height="15.33" style="fill:#c2c2c1"></rect>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half aos-init" data-aos="fade-down">
+            <div class="centered">
+              <h2 class="size-2" style="color: #220e19;">Tools</h2>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <img class="skills-item" src="img/adobe-xd.png"> </div>
+              <div class="column">
+                <img class="skills-item" src="img/photoshop.png"> </div>
+              <div class="column"> </div>
+              <div class="column"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero" id="contact">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-2-mobile aos-init aos-animate" data-aos="slide-left" style="color: #220e19;">contact.</h1>
+          <p class="subtitle is-size-6">Feel free to contact me through any of the links below</p>
+          <div class="links">
+          <a href="https://www.instagram.com/itssilverbaby/">
+            <span class="icon">
+              <i class="fa fa-instagram has-text-black"></i>
+            </span>
+          </a>
+          <a href="https://github.com/itsSilver">
+            <span class="icon">
+              <i class="fa fa-github has-text-black"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/silver-turku-513126152/">
+            <span class="icon">
+              <i class="fa fa-linkedin has-text-black"></i>
+            </span>
+          </a>
+          <a href="https://www.facebook.com/silviturku">
+          <span class="icon">
+            <i class="fa fa-facebook has-text-black"></i>
+          </span>
+          </a>
+          <a href="mailto:silverturku@gmail.com" target="_top">
+            <span class="icon">
+              <i class="fa fa-envelope has-text-black"></i>
+            </span>
+          </a>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
 </body>
 
 </html>
